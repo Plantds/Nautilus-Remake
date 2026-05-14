@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{572116ff-ab87-4955-b84d-1201fab4774d}">
+		<property name="assetPath">
+			<value>Ai Lines/L_3/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8baa8edf-b616-4ad9-b2ec-32c7621b7c7c}</destination>
+		</relationship>
+	</object>
+</objects>

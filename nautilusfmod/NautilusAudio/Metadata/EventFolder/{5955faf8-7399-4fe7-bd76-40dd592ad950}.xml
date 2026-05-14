@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{5955faf8-7399-4fe7-bd76-40dd592ad950}">
+		<property name="name">
+			<value>Airlock</value>
+		</property>
+		<relationship name="folder">
+			<destination>{489a5ba7-5f7d-45bf-ab34-68f4137af618}</destination>
+		</relationship>
+	</object>
+</objects>

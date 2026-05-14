@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{9a7e5560-a855-4fbe-9dba-b5e4e67a9cf7}">
+		<property name="assetPath">
+			<value>Ai Lines/L_2/Trigger Lines/Second Translation Trigger Line/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8baa8edf-b616-4ad9-b2ec-32c7621b7c7c}</destination>
+		</relationship>
+	</object>
+</objects>

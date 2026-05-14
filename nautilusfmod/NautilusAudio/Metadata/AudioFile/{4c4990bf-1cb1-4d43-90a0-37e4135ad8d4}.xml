@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4c4990bf-1cb1-4d43-90a0-37e4135ad8d4}">
+		<property name="assetPath">
+			<value>Submarine/Scout/Cannon recharge 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.087233560090703</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8baa8edf-b616-4ad9-b2ec-32c7621b7c7c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{07e9091d-10e6-4676-9708-2e1a1b61dc6e}">
+		<property name="name">
+			<value>Power Signature Close Trigger Line</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8f3beced-34ea-4c86-9ee7-7fa04e4594af}</destination>
+		</relationship>
+	</object>
+</objects>

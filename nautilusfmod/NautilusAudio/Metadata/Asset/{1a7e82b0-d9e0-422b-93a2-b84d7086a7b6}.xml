@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{1a7e82b0-d9e0-422b-93a2-b84d7086a7b6}">
+		<property name="assetPath">
+			<value>Ambience/L_3/BackToTheSub/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8baa8edf-b616-4ad9-b2ec-32c7621b7c7c}</destination>
+		</relationship>
+	</object>
+</objects>

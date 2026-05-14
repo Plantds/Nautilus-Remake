@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{372851b5-2c33-4c20-a605-00a3a1ca450a}">
+		<property name="assetPath">
+			<value>Ai Lines/L_1/Inpect Lines/CaveStatue Inpect/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8baa8edf-b616-4ad9-b2ec-32c7621b7c7c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{41eb9bbb-d6c7-4dea-809a-0c8f0a911d84}">
+		<property name="assetPath">
+			<value>Ai Lines/L_3/Inspect Lines/Under Water Stairs/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8baa8edf-b616-4ad9-b2ec-32c7621b7c7c}</destination>
+		</relationship>
+	</object>
+</objects>

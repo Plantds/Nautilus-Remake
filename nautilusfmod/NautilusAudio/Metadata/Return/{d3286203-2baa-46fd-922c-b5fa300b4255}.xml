@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerReturn" id="{d3286203-2baa-46fd-922c-b5fa300b4255}">
+		<property name="overridingInputFormat">
+			<value>2</value>
+		</property>
+		<property name="name">
+			<value>AI ExtReverb</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{81684d72-9a37-458c-a1bf-00546d61826c}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{f9301512-08fa-458e-bc6c-d83d9decaf8b}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{ffd35db3-7c60-4105-bece-c8a8a94a8448}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{81684d72-9a37-458c-a1bf-00546d61826c}">
+		<relationship name="effects">
+			<destination>{1d90545a-5e6b-4f5e-b5d0-8a4a96785a9f}</destination>
+			<destination>{92b37493-3dc0-4a1a-9788-379ee03d502d}</destination>
+			<destination>{5eaf84dc-e37e-49a1-9f00-a2389af67f83}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{f9301512-08fa-458e-bc6c-d83d9decaf8b}" />
+	<object class="MixerBusFader" id="{1d90545a-5e6b-4f5e-b5d0-8a4a96785a9f}" />
+	<object class="MultibandEqEffect" id="{92b37493-3dc0-4a1a-9788-379ee03d502d}">
+		<property name="filterTypeA">
+			<value>6</value>
+		</property>
+		<property name="filterTypeB">
+			<value>3</value>
+		</property>
+		<property name="frequencyA">
+			<value>850.559509</value>
+		</property>
+		<property name="frequencyB">
+			<value>4462.32178</value>
+		</property>
+		<property name="qualityA">
+			<value>0.7961725</value>
+		</property>
+		<property name="qualityB">
+			<value>1.85000002</value>
+		</property>
+	</object>
+	<object class="SFXReverbEffect" id="{5eaf84dc-e37e-49a1-9f00-a2389af67f83}">
+		<property name="decayTime">
+			<value>4000</value>
+		</property>
+		<property name="earlyDelay">
+			<value>11.5</value>
+		</property>
+		<property name="lateDelay">
+			<value>2</value>
+		</property>
+		<property name="HFReference">
+			<value>3600</value>
+		</property>
+		<property name="HFDecayRatio">
+			<value>10</value>
+		</property>
+		<property name="earlyLateMix">
+			<value>84</value>
+		</property>
+		<property name="wetLevel">
+			<value>2</value>
+		</property>
+		<property name="dryLevel">
+			<value>-1</value>
+		</property>
+	</object>
+</objects>

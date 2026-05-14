@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{f8191e97-f145-4bee-9c48-45d68a2e63db}">
+		<property name="name">
+			<value>SubmarineMovingOutside</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b6a52900-87c7-45d2-a02b-865441860497}</destination>
+		</relationship>
+	</object>
+</objects>

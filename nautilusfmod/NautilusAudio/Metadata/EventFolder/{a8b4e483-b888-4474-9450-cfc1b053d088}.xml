@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{a8b4e483-b888-4474-9450-cfc1b053d088}">
+		<property name="name">
+			<value>Giants Pass Trigger Line</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8f3beced-34ea-4c86-9ee7-7fa04e4594af}</destination>
+		</relationship>
+	</object>
+</objects>

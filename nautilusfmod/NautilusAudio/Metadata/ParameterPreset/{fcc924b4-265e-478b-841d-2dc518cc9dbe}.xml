@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fcc924b4-265e-478b-841d-2dc518cc9dbe}">
+		<property name="name">
+			<value>Ambience_Music_BassCutoff</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c378880b-6d32-4cc4-833d-24d6ba9cefad}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{c220d142-6582-440a-bde3-674aaaa668f3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{c220d142-6582-440a-bde3-674aaaa668f3}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

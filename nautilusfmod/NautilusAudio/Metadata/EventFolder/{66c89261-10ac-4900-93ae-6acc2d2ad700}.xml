@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{66c89261-10ac-4900-93ae-6acc2d2ad700}">
+		<property name="name">
+			<value>Inspect Lines</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7e5621e7-178a-434c-81f4-f595588057a1}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EventFolder" id="{2e74bcde-e896-48b3-85ca-1b6f4b8affcf}">
+		<property name="name">
+			<value>Trigger Lines</value>
+		</property>
+		<relationship name="folder">
+			<destination>{401e2ee0-a86a-4ef0-abce-8be87b30a9c7}</destination>
+		</relationship>
+	</object>
+</objects>

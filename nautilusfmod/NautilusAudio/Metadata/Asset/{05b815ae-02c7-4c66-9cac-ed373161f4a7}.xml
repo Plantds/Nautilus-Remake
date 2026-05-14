@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{05b815ae-02c7-4c66-9cac-ed373161f4a7}">
+		<property name="assetPath">
+			<value>Ai Lines/L_2/Trigger Lines/Whale Trigger Line/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8baa8edf-b616-4ad9-b2ec-32c7621b7c7c}</destination>
+		</relationship>
+	</object>
+</objects>
