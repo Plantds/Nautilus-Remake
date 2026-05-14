@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3417777d368b1e74eae3e2aec47cf24e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Scripts/Interactable/Slider.cs
+  uploadId: 645235

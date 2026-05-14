@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe0b53f9fdfc32946a3de3a1b778da09
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Materials/Simple Color/Gray.mat
+  uploadId: 645235

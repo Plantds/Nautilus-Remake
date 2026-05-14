@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 957226e655f2c544cae2a8657a690dc4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Chair.prefab
+  uploadId: 645235

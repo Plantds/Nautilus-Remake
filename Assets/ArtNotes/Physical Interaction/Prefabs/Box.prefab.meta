@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 71e9660ef2bea314ea792a846962b0a7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Box.prefab
+  uploadId: 645235

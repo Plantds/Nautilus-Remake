@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 8b87d2a9d9bed3140b5d5c7fd0835ee6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Scripts/PlayerLooking.cs
+  uploadId: 645235

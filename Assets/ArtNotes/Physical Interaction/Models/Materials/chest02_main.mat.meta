@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3726d0a8245434a4bb64493c007d2098
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Models/Materials/chest02_main.mat
+  uploadId: 645235

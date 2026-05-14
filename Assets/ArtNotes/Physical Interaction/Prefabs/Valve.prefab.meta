@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dcfecc651bd97f94ca840f6c9fc43ad1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Valve.prefab
+  uploadId: 645235

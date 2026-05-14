@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d040ffce5a9066042ac980a4b316f77f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Models/Materials/palletdiff.mat
+  uploadId: 645235

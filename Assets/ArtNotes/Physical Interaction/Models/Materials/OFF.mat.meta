@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 327c0d7528807924c898e032d20526ba
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Models/Materials/OFF.mat
+  uploadId: 645235

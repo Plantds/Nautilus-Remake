@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fde9eb78557cf9040aff9bdc28540b9e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Slider.prefab
+  uploadId: 645235

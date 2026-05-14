@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7b8dc01f5e8a2fb41bdd57c4fe7e603d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Tube.prefab
+  uploadId: 645235

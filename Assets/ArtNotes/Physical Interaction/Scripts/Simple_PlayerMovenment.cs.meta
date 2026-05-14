@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 64b727eaff0369741b8cf1190cb366b2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Scripts/Simple_PlayerMovenment.cs
+  uploadId: 645235

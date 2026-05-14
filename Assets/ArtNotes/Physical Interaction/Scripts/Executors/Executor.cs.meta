@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 203e22ddfbfcffa468da254ef13f2d9e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Scripts/Executors/Executor.cs
+  uploadId: 645235

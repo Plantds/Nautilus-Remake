@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5971d9e6b96632e4fa3ca9336a2f4514
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Scripts/Executors/LightExecutor.cs
+  uploadId: 645235

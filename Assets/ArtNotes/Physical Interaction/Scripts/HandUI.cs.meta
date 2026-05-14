@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 1ca16a06a4ba05349a235c2ef22e90df
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Scripts/HandUI.cs
+  uploadId: 645235
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _image: {instanceID: 0}
+  - _default: {instanceID: 0}
+  - _grab: {instanceID: 0}
+  - _door: {instanceID: 0}
+  - _button: {instanceID: 0}
+  - _Inspect: {fileID: 2800000, guid: 3bbc77279e7dc2f4ba4ae710dea7937f, type: 3}
+  - _Fixa: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

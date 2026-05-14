@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97b2242e8dd097545a91476c51bbf858
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Models/Materials/chest02_door.mat
+  uploadId: 645235

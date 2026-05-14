@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fa78fa1e0b2ec704687f03471c159c48
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/ElectricalPanel_main.prefab
+  uploadId: 645235

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 27414b845b9dbee439a7b37c5b0346f6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Gate.prefab
+  uploadId: 645235

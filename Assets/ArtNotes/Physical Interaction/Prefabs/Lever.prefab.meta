@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d835295cb353e314bacb904333b40c45
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Lever.prefab
+  uploadId: 645235

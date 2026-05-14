@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b5d2e15db8b02c842a773fa1fd6056fc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Button.prefab
+  uploadId: 645235

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 46b81a2455dbb5b4b86311d73394c35a
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Prefabs/Battery.prefab
+  uploadId: 645235

@@ -1,0 +1,231 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+#include "Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl"
+
+struct Particle
+{
+    float3 Position;
+    float3 Velocity;
+};
+
+struct Target
+{
+    float3 Position;
+    float  Range2;
+    float  Factor;
+    
+    float  SolidRange;
+};
+
+struct Wall
+{
+    float3 Min;
+    float3 Max;
+    float3 Force;
+    
+    int3   ExitFaces;
+};
+
+// Time
+float  time;
+float  deltaTime;
+
+// Buffer Sizes
+int    particleCount;
+int    targetCount;
+int    wallCount;
+
+int    particleOffset = 0;
+
+// Player
+float3 targetPosition;
+
+// Speeds
+float  minSpeed = 0.2f;
+float  maxSpeed = 1.0f;
+float  drag     = 0.1f;
+
+// Ranges
+float  visualRange = 1.0f;
+float  protectedRangeMin = 0.5f;
+float  protectedRangeMax = 0.5f;
+float  visualRange2 = 1.0f;
+
+// Factors
+float  avoidFactor = 0.05f;
+float  centerFactor = 0.0005f;
+float  matchingFactor = 0.05f;
+float  playerTargetFactor = 0.1f;
+// Current used as "Use Targets" which allows the user
+float  targetFactor = 0.1f;
+
+// Buffers
+StructuredBuffer< Particle >   prevParticleBuffer;
+RWStructuredBuffer< Particle > particleBuffer;
+StructuredBuffer< Target >     targetBuffer;
+StructuredBuffer< Wall >       wallBuffer;
+
+
+// WIP octree lookup
+Texture3D<float4>              treeTexture;
+
+SamplerState linearClampSampler;
+
+float  invSize = 1.0f / 4.0f;
+#define MAX_TREE_DEPTH 3
+
+float4 tree_lookup( float3 Point )
+{
+    float4 I = float4( 0, 0, 0, 0 );
+    
+    float3 MND = Point;
+    for( float i = 0; i < MAX_TREE_DEPTH; i++ )
+    {
+        float3 P = ( MND + floor( 0.5 + I.xyz * 255.0 ) ) * invSize;
+        if( I.w < 0.9 )
+            I = treeTexture.Sample( linearClampSampler, P );
+    }
+    
+    return I;
+}
+
+[numthreads(256,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    // Unsure if it's required. But good to have either way.
+    int index = id.x;
+    if( index >= particleCount )
+        return;
+    
+    index += particleOffset;
+    
+    Particle moth = prevParticleBuffer[ index ];
+
+    moth.Velocity *= 1.0f - ( drag * deltaTime );
+
+    // Algorithm base from:
+    // https://people.ece.cornell.edu/land/courses/ece4760/labs/s2021/Boids/Boids.html
+    float3 pos_avg   = float3( 0, 0, 0 );
+    float3 vel_avg   = float3( 0, 0, 0 );
+    float3 close     = float3( 0, 0, 0 );
+    uint   neighbors = 0;
+
+    // "Random" protected range. Works well enough
+    float protectedRange = pow( lerp( protectedRangeMin, protectedRangeMax, abs( sin( index * 43365.32f ) ) ), 2 );
+
+    // Go through each other boid.
+    // TODO: Have this be a octree lookup. Probably won't be completed by the time of gold.
+    int i;
+    for( i = 0; i < particleCount; i++ )
+    {
+        if( i == index )
+            continue;
+        
+        Particle other = prevParticleBuffer[ i ];
+
+        float3 d = abs( moth.Position - other.Position );
+
+        if( d.x < visualRange && d.y < visualRange && d.z < visualRange )
+        {
+            float dist2 = dot( d, d );
+
+            if( dist2 < protectedRange )
+                // 0.02 is a magic number. The higher it is the closer the boids are allowed to be to one another without speeding away.
+                close += ( moth.Position - other.Position ) / max( dist2, 0.02 );
+            else if( dist2 < visualRange2 )
+            {
+                pos_avg += other.Position;
+                vel_avg += other.Velocity;
+
+                neighbors++;
+            }
+        }
+    }
+
+    if( neighbors > 0 )
+    {
+        pos_avg = pos_avg / neighbors;
+        vel_avg = vel_avg / neighbors;
+
+        moth.Velocity = ( moth.Velocity + ( pos_avg - moth.Position ) * centerFactor + ( vel_avg - moth.Velocity ) * matchingFactor );
+    }
+
+    moth.Velocity = moth.Velocity + ( close * avoidFactor );
+
+    float3 dir_to_target = normalize( targetPosition - moth.Position );
+    
+    moth.Velocity += dir_to_target * playerTargetFactor;
+
+    // Go through each target
+    if( targetFactor > 0 )
+    {
+        for( i = 0; i < targetCount; i++ )
+        {
+            Target target = targetBuffer[ i ];
+
+            float3 d = target.Position - moth.Position;
+
+            if( dot( d, d ) < abs( target.Range2 ) )
+            {
+                if( target.SolidRange )
+                    moth.Position = target.Position + -target.SolidRange * normalize( d );
+                
+                moth.Velocity += target.Factor * normalize( d );
+            }
+        }
+    }
+
+    // Go through each wall
+    for( i = 0; i < wallCount; i++ )
+    {
+        Wall wall = wallBuffer[ i ];
+
+        if( moth.Position.x > wall.Min.x && moth.Position.x < wall.Max.x &&
+            moth.Position.y > wall.Min.y && moth.Position.y < wall.Max.y &&
+            moth.Position.z > wall.Min.z && moth.Position.z < wall.Max.z )
+        {
+            bool   insideSolidWall = false;
+            float  closestDistance = 10000.0f;
+            float3 exitPos;
+            
+            [ unroll ]
+            for( int axis = 0; axis < 3; axis++ )
+            {
+                int axisIndex = wall.ExitFaces[ axis ];
+                if( axisIndex != 0 )
+                {
+                    float mothPos = moth.Position[ axis ];
+                    float wallPos = axisIndex < 0 ? wall.Min[ axis ] : wall.Max[ axis ];
+                    float dist    = abs( mothPos - wallPos );
+                    
+                    if( dist < closestDistance )
+                    {
+                        closestDistance = dist;
+                        exitPos = moth.Position;
+                        exitPos[ axis ] = wallPos;
+                        insideSolidWall = true;
+                    }
+                }
+            }
+            
+            if( insideSolidWall )
+                moth.Position = exitPos;
+            
+            moth.Velocity += wall.Force;
+        }
+    }
+
+    // Basically we clamp the velocity.
+    float speed = length( moth.Velocity );
+
+    if( speed < minSpeed )
+        moth.Velocity = ( moth.Velocity / speed ) * minSpeed;
+    else if( speed > maxSpeed )
+        moth.Velocity = ( moth.Velocity / speed ) * maxSpeed;
+
+    // Finally we update the moths position.
+    moth.Position += moth.Velocity * deltaTime;
+    
+    particleBuffer[ index ] = moth;
+}
