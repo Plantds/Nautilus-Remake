@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9d51dd4ce25a60c4f889aef5ffbea9f2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 207611
+  packageName: Physical Interaction
+  packageVersion: 1.5
+  assetPath: Assets/ArtNotes/Physical Interaction/Demo Scene/Physical Interaction
+    Demo/LightingData.asset
+  uploadId: 645235
