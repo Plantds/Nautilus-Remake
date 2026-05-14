@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5732480788275521296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.171503
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.171503
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.171503
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 352.5292
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 864.588
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 629.0309
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.81039053
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5858901
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -71.732
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: m_Name
+      value: SM_Flood_sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466071978796535932, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 441d0e870a75eac40b6e300466b3970b, type: 2}
+    - target: {fileID: 8535133971147982272, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 441d0e870a75eac40b6e300466b3970b, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8533766881416250247, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3420151927343554018}
+  m_SourcePrefab: {fileID: 100100000, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+--- !u!1 &4171418629153678487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8533766881416250247, guid: 89bfa36b4b0f37f45987836e6712390f, type: 3}
+  m_PrefabInstance: {fileID: 5732480788275521296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3420151927343554018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171418629153678487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058a6c4748fa4cd429963b2831ee0a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CS_LightSwitch
+  _onEmison: 0.5
+  _offEmison: 0
+  _veriableName: _Emissive_Strength
+  _minFlickerTime: 0.4
+  _maxFlickerTime: 1.2
